@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+.landing_page {
+  height: 100dvh;
+  width: 100%;
+  background: linear-gradient(
+      0deg,
+      rgba(33, 33, 33, 0.3),
+      rgba(33, 33, 33, 0.3)
+    ),
+    linear-gradient(180deg, rgba(26, 188, 196, 0) 74.91%, #1abcc4 134.33%),
+    url("./assets/bg-img.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.home_page {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0 16px;
+}
+
+.title {
+  font-weight: 400;
+  margin-top: 40px;
+}
+
+.title p:first-child {
+  font-size: 6vw;
+  color: #ffffffb2;
+}
+
+.title p:last-child {
+  font-size: 8vw;
+  color: white;
+
+  background: linear-gradient(
+    91.26deg,
+    #ffffff 77.18%,
+    rgba(26, 188, 196, 0.6) 164.13%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.footer {
+  margin-bottom: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 5vw;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.footer img {
+  width: 50vw;
+  max-width: 192px;
+  height: 53px;
+}
+
+@media (min-width: 768px) {
+  .title p:first-child {
+    font-size: 28px;
+  }
+
+  .title p:last-child {
+    font-size: 36px;
+  }
+
+  .footer {
+    font-size: 20px;
+  }
+
+  .footer img {
+    width: 160px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .title p:first-child {
+    font-size: 32px;
+  }
+
+  .title p:last-child {
+    font-size: 42px;
+  }
+
+  .footer {
+    font-size: 24px;
+  }
+
+  .footer img {
+    width: 192px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .title {
+    margin-top: 80px;
+  }
+
+  .title p:first-child {
+    font-size: 48px;
+  }
+
+  .title p:last-child {
+    font-size: 64px;
+  }
+
+  .footer {
+    font-size: 32px;
+    margin-bottom: 80px;
+  }
+
+  .footer img {
+    width: 240px;
+  }
+}
